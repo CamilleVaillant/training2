@@ -1,0 +1,59 @@
+
+
+
+
+@use "../abstract/variable";
+@use "../abstract/mixins" as *;
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    
+    li{
+        padding-top: 5rem;
+    }
+    
+    a{
+        color: variable.$deuxième-couleur;
+        padding: 5rem;
+    }
+    i{
+        color: variable.$deuxième-couleur;
+        padding: 5rem;
+    }
+}
+header{
+    background-color: variable.$premiere-couleur;
+    width: 100%;
+    height: 50vh;
+    
+}
+footer{
+    background-color: variable.$premiere-couleur;
+    width: 100%;
+    height: 50vh;
+}
+h1{
+    color: variable.$deuxième-couleur;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.fa-bars{
+    display: none;
+}
+
+header h2{
+    @include h2(green, beige, 180deg, green)
+}
+.haine{
+    @include h2(white, black, 90deg, white)
+}
+.voila{
+    @include h2(blue, white, 45deg, blue)
+}
+footer h2{
+    @include h2(red, yellow, 200deg, red)
+}

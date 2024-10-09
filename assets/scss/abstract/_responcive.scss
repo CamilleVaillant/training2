@@ -1,0 +1,32 @@
+
+
+
+
+
+@media screen and (max-width:770px){
+    .fa-bars{
+        display:block;
+    }
+    nav ul{
+        display: none; 
+    }
+    .menu_dropdown:hover ul{
+        display:block;
+        position: absolute;
+        top:2rem ;
+        left:0rem;
+        background-color: black;
+    }
+    ul li{
+        padding: 1rem;
+    }
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+}

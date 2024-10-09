@@ -1,0 +1,14 @@
+
+
+
+
+@mixin h2($text-color, $bg-color, $tourne, $color) {
+    font-size: 2rem;
+    color: $text-color;
+    background-color: $bg-color;
+    transform: rotate($tourne);
+    border: 1px solid $color;
+    padding: 1rem;
+    display: inline-block;
+
+}
